@@ -1,0 +1,12 @@
+server:
+  port: 8080
+
+external-api:
+  musicbrainz:
+    endpoint-url: http://musicbrainz.org/ws/2/artist/{mbid}?&fmt=json&inc=url-rels+release-groups
+  wikidata:
+    endpoint-url: https://www.wikidata.org/wiki/Special:EntityData/{linkId}.json
+  wikipedia:
+    endpoint-url: https://en.wikipedia.org/api/rest_v1/page/summary/{title}
+  cover-art:
+    endpoint-url: https://coverartarchive.org/release-group/{id}
